@@ -1,7 +1,67 @@
 # translationglossary
-to help interpreters and translators worldwide to search and find the term at 95% after they input their field
-write me a web app in javascript. The web app has a login page to provide an e-mail address and phone number, then send a security code to the user so the e-mail adress or phone number can be verified. after verification, the user is ready to go. The web app is mainly a glossary. the main function is to have the user input a term in his native language, then look into the glossary_database_second_language and find a term that is 95% accurate. The user has a "switch language button" that allows him to input a word or sentence in the second language, then have the results in his native language. Any verified user is allowed to input a new match if the glossary did not yield a result at 95% accuracy. All the new inputs are submitted to the team to be reviewed then approved. unapproved results should be flagged with "unaproved match" flag and "most popular unaproved match" depending on how many people rated it to be accurate.
-ChatGPT
+This Web App written in Javascript or any different modern programming language help interpreters and translators worldwide to search and find the term with an accuracy of 95% based on the nature of the documents they are translating/interpreting.
+
+To use it, the interpreter login using an e-mail address and a phone number
+A security code is sent to the user to be verified or authenticated. After this step, the user is ready to go.
+
+The web app is mainly a glossary. 
+1.The basic function helps the user input a term in his native language.
+Then the glossary_database_second_language finds him/her a term that is 95% accurate.
+The user is given 3~5 options to chose the most accurate one.
+The engine understands the context of a natural language or technical language in order to suggest a more accurate term(AI, further development)
+2. The advanced function helps the user input a segment or an entire sentence.
+Then the glossary_database_second_language finds him/her a term that is 95% accurate.
+The user is given 3~5 options to chose the most accurate segment or sentence., 
+    otherwise, he can update the glossary.
+    once the user's uploads is confirmed to be 100% accurate, it can be added into the main glossary or main database
+    this will improve the system as more users gets smarter, the system will also get smarter.
+At this level, the brain of our engine understands the context of a natural language or technical language, sentence by sentence, in any context, in order to provide a more accurate term(AI, further development)
+    otherwise, it will give a rough suggestion that can be edited by the experienced user or a human who knows the field well.
+  
+
+User Interface:
+1. has a login page:
+       Username, Password, login.
+   or register page:
+       Username,password, email address, be verified, you're authenticated!
+2. has a settings page:
+       target language, first language/native language, fields of interpretation with a 5 star rating(the ones  you want the         engine to focus on, in order to help you, for example, you can say
+           Medical,
+           Law,
+           Biology,
+           Chemistry,
+           Law enforcement,
+           Banking,
+           Courts,
+           Medical Insurance,
+           Water management,
+           Aerospace engineering,
+           Immigration or government services
+           Telephone companies
+           IT companies,
+           etc,etc.)
+4. has a text input area that:
+    allows him to input a word or sentence in the second/native language,
+    then have the results in either
+5. has a "switch language button" language A<-switch -> Language B
+
+BACKEND DESIGN:
+1. sends all the data the user need to accomplish:
+       register
+       login
+       translate/interpret
+2. updates the database to be the most accurate in all the fields, existing and new ones.
+3. saves all the data, assign them a rating (1~5 stars, or a % age of accuracy)
+4. 
+
+HOW THE SYSTEM WILL EVOLVE:
+Any verified/ expert user is allowed to input a new match if the glossary did not yield a result at 95% accuracy. 
+All the new input is submitted to the team to be reviewed then approved.
+unapproved results should be flagged with "unapproved match" flag and "most popular unaproved match" or give the user a possibility ti improve or explain why the translation is accurate.
+Experts will decide , or a jury will decide, or 5 experts from the field will vote on the most accurate to be written as 100% accurate. 
+
+Suggestion from ChatGPT:
+
 Here's a basic outline of how you could structure your web app using HTML, CSS, and JavaScript:
 
 HTML Structure:
